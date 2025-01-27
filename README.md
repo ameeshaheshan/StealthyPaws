@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/ameeshaheshan/NebulaDork/"><img src="https://github.com/ameeshaheshan/NebulaDork/blob/main/src/banner.png" alt="NebulaDork"></a>
+  <a href="https://github.com/ameeshaheshan/StealthyPaws/"><img src="https://github.com/ameeshaheshan/StealthyPaws/blob/main/src/banner.png" alt="StealthyPaws"></a>
   <br>
   NebulaDork
   <br>
