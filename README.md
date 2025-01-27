@@ -141,21 +141,15 @@ After starting the tool, type the command run to begin capturing keystrokes:
 <b>Example 2: Sending Logs to Telegram</b>
 The tool will automatically send the log file to your Telegram bot every 30 seconds. Here's an example log:
 
-### Domain-Specific Search
-
 ```bash
-python3 main.py --dork "inurl:admin" --filter ".gov" --pages 5 --save
-```
+  [2025-01-27 12:34:56] Hello World
+  [2025-01-27 12:35:00] How are you today?
 
-### File Type Filtering
-
-```bash
-python3 main.py --dork "confidential" --file-type "pdf" --pages 3 --save
 ```
 
 ## ⚠️ Disclaimer
 
-This tool is for educational and ethical testing purposes only. Users are responsible for complying with applicable laws and obtaining necessary permissions before testing any systems they don't own.
+StealthyPaws is intended for ethical purposes only. Misuse of this tool for unauthorized surveillance or hacking activities is illegal and unethical. Always obtain proper consent before using this tool. The developer of this tool does not take responsibility for any misuse, damage, or legal consequences resulting from the use of StealthyPaws.
 
 ## 🤝 Contributing
 
