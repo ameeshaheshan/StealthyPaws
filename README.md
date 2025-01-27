@@ -66,7 +66,34 @@ pip install -r requirements.txt
   https://api.telegram.org/bot{BOT_TOKEN}/getUpdates
   ```
 * Look for "chat": { "id": ... } in the JSON response. This is your chat ID.
-* Start a chat and type `/start`. The bot will send you a message containing your **Chat ID** (e.g., `123456789`).
+  ```bash
+  { "ok": true,
+    "result": [
+    {
+      "update_id": 1234567890,
+      "message": {
+        "message_id": 3,
+        "from": {
+          "id": 123456789,
+          "is_bot": false,
+          "first_name": "Stealthy",
+          "last_name": "Paws",
+          "username": "StealthyPaws",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 123456789,
+          "first_name": "Stealthy",
+          "last_name": "Paws",
+          "username": "StealthyPaws",
+          "type": "private"
+        },
+        "date": 1737962115,
+        "text": "Hello"
+      }
+    }
+  }
+  ```
 
 
 ## 💡 Usage
