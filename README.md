@@ -2,7 +2,7 @@
   <br>
   <a href="https://github.com/ameeshaheshan/StealthyPaws/"><img src="https://github.com/ameeshaheshan/StealthyPaws/blob/main/src/banner.png" alt="StealthyPaws"></a>
   <br>
-  NebulaDork
+  StealthyPaws 🐾
   <br>
 </h1>
 
