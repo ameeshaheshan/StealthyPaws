@@ -11,7 +11,7 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Version](https://img.shields.io/badge/version-1.3-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 
 **The Silent Guardian of Your Keystrokes 🐾, Tracking Every Key ⌨️ in the Shadows 🌑, Safely and Securely 🔒**
 
