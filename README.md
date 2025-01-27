@@ -95,6 +95,11 @@ pip install -r requirements.txt
   }
   ```
 
+### 3. Add the bot credentials to the code:
+```bash
+BOT_TOKEN = "your-bot-token"
+CHAT_ID = "your-chat-id"
+```
 
 ## 💡 Usage
 
