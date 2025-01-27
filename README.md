@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/ameeshaheshan/StealthyPaws/"><img src="https://github.com/ameeshaheshan/StealthyPaws/blob/main/src/banner.png" alt="StealthyPaws"></a>
+  <a href="https://github.com/ameeshaheshan/StealthyPaws/"><img src="https://github.com/ameeshaheshan/StealthyPaws/blob/main/src/bannernew.png" alt="StealthyPaws"></a>
   <br>
   StealthyPaws 🐾
   <br>
@@ -13,91 +13,101 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Version](https://img.shields.io/badge/version-1.3-blue.svg)
 
-**High-speed Google dorking tool with SQL injection detection capabilities**
+**The Silent Guardian of Your Keystrokes 🐾, Tracking Every Key ⌨️ in the Shadows 🌑, Safely and Securely 🔒**
 
 [Features](#✨-features) • [Installation](#🚀-installation) • [Usage](#💡-usage) • [Examples](#📚-examples) • [Contributing](#🤝-contributing)
 
 </div>
 <div align="center">
-  <img src="https://github.com/ameeshaheshan/NebulaDork/blob/main/src/1.png" alt="NebulaDork"></a>
-  <img src="https://github.com/ameeshaheshan/NebulaDork/blob/main/src/2.png" alt="NebulaDork"></a>
+  <img src="https://github.com/ameeshaheshan/StealthyPaws/blob/main/src/img1.png" alt="StealthyPaws"></a>
+  <img src="https://github.com/ameeshaheshan/StealthyPaws/blob/main/src/img2.png" alt="StealthyPaws"></a>
 </div>
 
 ## 🎯 Overview
 
-NebulaDork is an open-source, high-speed Python tool for Google dorking that filters SQL-vulnerable URLs and web applications. With multi-threading support and advanced filtering capabilities, it streamlines web reconnaissance and vulnerability testing processes.
+StealthyPaws is designed for ethical purposes, offering keylogging functionality in a discreet and user-friendly manner. Once activated, it tracks every key pressed and sends the log file to a Telegram bot, allowing you to monitor inputs remotely. This tool is intended for cybersecurity research, ethical hacking, and educational purposes only.
 
 ## ✨ Features
 
-- 🚀 High-speed multi-threaded Google dorking
-- 🎯 Domain and file type filtering
-- 🛡️ Automated SQL injection vulnerability testing
-- 🤖 CAPTCHA solving support
-- 📱 Random User-Agent rotation
-- 💾 Results export functionality
-- 🎨 Customizable output filtering
+- **🕵️‍♂️ Stealthy Keylogger**: Captures all keystrokes, including space, enter, backspace, etc.
+- **🤖 Telegram Integration**: Sends captured keystrokes to your Telegram bot as a log file.
+- **🔒 Background Operation**: Runs invisibly and silently, logging all user input.
+- **⏱️ Real-time Logging**: Sends log updates every 30 seconds (or on user command).
+- **💻 Cross-Platform Support**: Works on Windows, Linux, and macOS systems.
+- **⚙️ Customizable Commands**: Supports custom commands for managing the tool.
 
 ## 🚀 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/ameeshaheshan/NebulaDork.git
+git clone https://github.com/ameeshaheshan/StealthyPaws.git
 
 # Navigate to the directory
-cd NebulaDork
+cd StealthyPaws
 
 # Install requirements
 pip install -r requirements.txt
 ```
 
+## 🤖 How to Set Up the Telegram Bot
+
+### 1. Create a new bot:
+
+* Open the **Telegram app** and search for the “**BotFather**.”
+* Start a chat and type `/newbot` to create a new bot.
+* Follow the prompts to name your bot and get the bot token (e.g., `123456789:ABCDEF1234567890abcdef1234567890`).
+
+### 2. Get your **Chat ID**:
+
+* Add your bot to a group or use it directly in a private chat.
+* Send any message to your bot.
+* Open the following URL in your browser (replace BOT_TOKEN with your actual bot token)
+  ```bash
+  https://api.telegram.org/bot{BOT_TOKEN}/getUpdates
+  ```
+* Look for "chat": { "id": ... } in the JSON response. This is your chat ID.
+* Start a chat and type `/start`. The bot will send you a message containing your **Chat ID** (e.g., `123456789`).
+
+
 ## 💡 Usage
 
 ```bash
-usage: main.py [-h] --dork DORK [--pages PAGES] [--filter FILTER] [--file-type FILE_TYPE] 
-               [--delay DELAY] [--save] [--verbose] [--captcha-api CAPTCHA_API]
-               [--threads {1,2,3,4,5,6,7,8,9,10}] [--show-title] 
-               [--output-filter OUTPUT_FILTER] [--random-user-agent RANDOM_USER_AGENT]
-               [--sql-injection]
+# Run script
+python app.py
 ```
 
-### 🔧 Options
+## Hide the Keylogger (Optional, for Ethical Use)
+Run the script as a background process or convert it to an executable using pyinstaller:
 
 ```bash
-  -h, --help            show this help message and exit
-  --dork DORK           Dork query
-  --pages PAGES         Number of pages to fetch
-  --filter FILTER       Filter by domain (e.g. .gov, .edu)
-  --file-type FILE_TYPE Filter by file type (e.g. pdf, doc)
-  --delay DELAY         Delay between requests (seconds)
-  --save                Save output to file
-  --verbose             Verbose mode for debugging
-  --captcha-api CAPTCHA_API
-                        API key for CAPTCHA solving service (e.g. 2captcha)
-  --threads {1,2,3,4,5,6,7,8,9,10}
-                       Number of threads for parallel requests (min 1, max 10)
-  --show-title         Show titles of the search results along with URLs
-  --output-filter OUTPUT_FILTER
-                       Output URL filter (e.g., php?*=)
-  --random-user-agent RANDOM_USER_AGENT
-                       Use random User-Agent headers from a specified file
-  --sql-injection      Test for SQL injection vulnerabilities
+pip install pyinstaller
+pyinstaller --onefile --noconsole app.py
+```
+
+
+### 🔧 Options
+Once the program is running, use these commands to interact with StealthyPaws:
+
+```bash
+  `show option` – Display the available commands.
+  `run` – Start the keylogger and begin logging keystrokes.
+  `clear` – Clear the console (except for the banner).
+  `update` – Check and update the tool to the latest version.
+  `exit` – Exit the tool and stop the keylogger.
 ```
 
 ## 📚 Examples
 
-### Basic SQL Injection Vulnerability Scanning
+<b>Example 1: Starting the Keylogger</b>
+After starting the tool, type the command run to begin capturing keystrokes:
 
 ```bash
-python3 main.py --dork "view_items.php?id=" --pages 10 --verbose --threads 10 --output-filter "php?" --sql-injection
+  StealthyPaws > run
+  [+] Keylogger started. Capturing keys... Press Ctrl+C to stop.
 ```
 
-This command will:
-- Search for potentially vulnerable PHP pages
-- Scan 10 pages of Google results
-- Use maximum thread count for speed
-- Filter results containing 'php?'
-- Test each URL for SQL injection vulnerabilities
-- Show detailed progress with verbose mode
+<b>Example 2: Sending Logs to Telegram</b>
+The tool will automatically send the log file to your Telegram bot every 30 seconds. Here's an example log:
 
 ### Domain-Specific Search
 
